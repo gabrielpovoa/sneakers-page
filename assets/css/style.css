@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+
+:root {
+    --white: #F9F9F9;
+    --white-200: #EBE9EA;
+    --grey: #474747;
+    --black-light: #181818;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-color: var(--white-200);
+}
+
+.before-header {
+    background-color: var(--black-light);
+    text-align: center;
+    color: #FFF;
+    height: 50px;
+    line-height: 50px;
+}
+
+.before-header span,
+.middle-header span {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.middle-header {
+    background-color: #FFF;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+header {
+    min-height: 300px;
+}
+
+.header {
+    background:rgba(0,0,0,0.7) url('../images/jordan-background.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.header-jordan-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 50px;
+    color: var(--white);
+    max-width: 500px;
+}
+
+.header-jordan-info h2 {
+    font-size: 1.5rem;
+}
+
+.header-jordan-info p {
+    font-size: 1.5rem;
+    text-transform: none;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+section {
+    padding: 2rem 5%;
+}
+
+.home {
+    background-color: var(--white);
+}
+
+.home-header {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.home-header h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--black-light);
+    margin-bottom: 1rem;
+}
+
+.box-container {
+    max-width: 1100px;
+    margin: 4rem auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.box-container .box {
+    background-color: var(--white-200);
+    padding: 3rem 4%;
+    border-radius: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container .box img {
+    height: 18vh;
+}
+
+@media (max-width: 600px) {
+    .header-jordan-info {
+        padding: 25px;
+    }
+    .home-header span {
+        font-size: 1.3rem;
+    }
+}
